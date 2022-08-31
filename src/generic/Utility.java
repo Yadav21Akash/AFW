@@ -10,10 +10,8 @@ public class Utility
 	public static String getPropertyValue(String filePath,String key) throws Exception
 	{
 		Properties p = new Properties();
-		
 		p.load(new FileInputStream(filePath));
 		String value = p.getProperty(key);
-		
 		return value;
 	}
 	

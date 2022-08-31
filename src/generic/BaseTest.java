@@ -41,25 +41,25 @@ public class BaseTest
 		int intITO = Integer.parseInt(strITO);
 		Reporter.log("ITO : "+strITO,true);
 		
-		String strETO =  Utility.getPropertyValue(configPath,"ETO");
+		String strETO = Utility.getPropertyValue(configPath,"ETO");
 		int intETO = Integer.parseInt(strETO);
 		Reporter.log("ETO : "+strETO,true);
 		
-		String browser =   Utility.getPropertyValue(configPath,"Browser");
+		String browser = Utility.getPropertyValue(configPath,"Browser");
 		
 		if(browser.equalsIgnoreCase("Chrome"))
 		{
-			driver=new ChromeDriver();
+			driver = new ChromeDriver();
 			Reporter.log("Opening Chrome Browser",true);
 		}
 		else if(browser.equalsIgnoreCase("Firefox")) 
 		{
-			driver =new FirefoxDriver();
+			driver = new FirefoxDriver();
 			Reporter.log("Opening Firefox Browser",true);
 		}
 		else if(browser.equalsIgnoreCase("Edge"))
 		{
-			driver=new EdgeDriver();
+			driver = new EdgeDriver();
 			Reporter.log("Opening Edge Browser",true);
 		}
 		else
