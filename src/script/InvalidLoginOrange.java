@@ -15,7 +15,7 @@ public class InvalidLoginOrange extends BaseTest
 		String un = Utility.getXLData(testDataPath,"InvalidLogin",2,0);
 		String pwd = Utility.getXLData(testDataPath,"InvalidLogin",2,1);
 		
-//        1. Enter valid user name
+//      1. Enter valid user name
 		LoginPageOrange loginPageOrange = new LoginPageOrange(driver);
 		loginPageOrange.setUserName(un);
 		

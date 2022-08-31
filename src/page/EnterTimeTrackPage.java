@@ -28,7 +28,6 @@ public class EnterTimeTrackPage
 	{
 		try
 		{
-		
 			wait.until(ExpectedConditions.visibilityOf(logoutLink));
 			Reporter.log("Logout link is visible",true);
 			

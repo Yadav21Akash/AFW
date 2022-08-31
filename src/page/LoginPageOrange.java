@@ -46,7 +46,6 @@ public class LoginPageOrange
 	{
 		try
 		{
-		
 			wait.until(ExpectedConditions.visibilityOf(errMsg));
 			Reporter.log("Err Msg is Displayed",true);
 			

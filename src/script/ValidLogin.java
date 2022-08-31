@@ -14,9 +14,9 @@ public class ValidLogin extends BaseTest
 		@Test(priority = 1)
 		public void testValidLogin() throws Exception
 		{
-			
 			String un = Utility.getXLData(testDataPath,"ValidLogin",1,0);
 			String pwd = Utility.getXLData(testDataPath,"ValidLogin",1,1);
+			
 //	        1. Enter valid user name
 			LoginPage loginPage=new LoginPage(driver);
 			loginPage.setUserName(un);
@@ -30,8 +30,8 @@ public class ValidLogin extends BaseTest
 //			4. verify that home page is displayed
 			EnterTimeTrackPage ettPage=new EnterTimeTrackPage(driver);
 			boolean res = ettPage.verifyHomePageIsDisplayed(wait);
+			
 			//true->PASS     false->FAIL
 			Assert.assertEquals(res, true);
-			
 		}
 }

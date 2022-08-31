@@ -17,17 +17,16 @@ public class LoginPage
 	@FindBy(name="pwd")
 	private WebElement pwTB;
 	
-	@FindBy(xpath="//div[.='Login ']")
+	@FindBy(xpath="//div[text()='Login ']")
 	private WebElement loginBTN;
 	
-	@FindBy(xpath="//span[contains(.,'invalid')]")
+	@FindBy(xpath="//span[contains(text(),'invalid')]")
 	private WebElement errMsg;
 	
 	public LoginPage(WebDriver driver)
 	{
 		PageFactory.initElements(driver,this);
 	}
-	
 	
 	public void setUserName(String un)
 	{
@@ -48,7 +47,6 @@ public class LoginPage
 	{
 		try
 		{
-		
 			wait.until(ExpectedConditions.visibilityOf(errMsg));
 			Reporter.log("Err Msg is Displayed",true);
 			
