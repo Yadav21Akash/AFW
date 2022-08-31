@@ -4,6 +4,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
 
 public class LoginPageOrange 
 {
@@ -15,6 +18,9 @@ public class LoginPageOrange
 	
 	@FindBy(xpath="//button[@type='submit']")
 	private WebElement loginBtn;
+	
+	@FindBy(xpath="//p[text()='Invalid credentials']")
+	private WebElement errMsg;
 	
 	public LoginPageOrange(WebDriver driver) 
 	{
@@ -34,5 +40,22 @@ public class LoginPageOrange
 	public void clickLoginButton()
 	{
 		loginBtn.click();
+	}
+	
+	public boolean verifyErrMsgDisplayed(WebDriverWait wait)
+	{
+		try
+		{
+		
+			wait.until(ExpectedConditions.visibilityOf(errMsg));
+			Reporter.log("Err Msg is Displayed",true);
+			
+			return true;//pass
+		}
+		catch (Exception e) 
+		{
+			Reporter.log("Err Msg is Not Displayed",true);
+			return false;//fail
+		}
 	}
 }

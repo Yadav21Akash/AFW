@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="script.ValidLoginOrange">
+      <class name="script.InvalidLoginOrange">
         <methods>
           <include name="openApp"/>
-          <include name="testValidLoginOrange"/>
+          <include name="testInvalidLogin"/>
           <include name="closeApp"/>
         </methods>
-      </class> <!-- script.ValidLoginOrange -->
+      </class> <!-- script.InvalidLoginOrange -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

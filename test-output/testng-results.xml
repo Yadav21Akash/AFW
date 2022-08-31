@@ -26,18 +26,18 @@
       <![CDATA[Setting ETO to 12 seconds]]>
     </line>
     <line>
-      <![CDATA[HomePage is displayed]]>
+      <![CDATA[Err Msg is Displayed]]>
     </line>
     <line>
       <![CDATA[Closing the Browser]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-08-30T06:34:50 IST" name="Default suite" finished-at="2022-08-30T06:35:03 IST" duration-ms="13392">
+  <suite started-at="2022-08-30T20:32:54 IST" name="Default suite" finished-at="2022-08-30T20:33:21 IST" duration-ms="27282">
     <groups>
     </groups>
-    <test started-at="2022-08-30T06:34:50 IST" name="Default test" finished-at="2022-08-30T06:35:03 IST" duration-ms="13392">
-      <class name="script.ValidLoginOrange">
-        <test-method is-config="true" signature="openApp()[pri:0, instance:script.ValidLoginOrange@247d8ae]" started-at="2022-08-30T06:34:50 IST" name="openApp" finished-at="2022-08-30T06:34:59 IST" duration-ms="9480" status="PASS">
+    <test started-at="2022-08-30T20:32:54 IST" name="Default test" finished-at="2022-08-30T20:33:21 IST" duration-ms="27282">
+      <class name="script.InvalidLoginOrange">
+        <test-method is-config="true" signature="openApp()[pri:0, instance:script.InvalidLoginOrange@247d8ae]" started-at="2022-08-30T20:32:54 IST" name="openApp" finished-at="2022-08-30T20:33:16 IST" duration-ms="21751" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[App URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
@@ -65,21 +65,21 @@
             </line>
           </reporter-output>
         </test-method> <!-- openApp -->
-        <test-method signature="testValidLoginOrange()[pri:1, instance:script.ValidLoginOrange@247d8ae]" started-at="2022-08-30T06:34:59 IST" name="testValidLoginOrange" finished-at="2022-08-30T06:35:03 IST" duration-ms="3667" status="PASS">
+        <test-method signature="testInvalidLogin()[pri:2, instance:script.InvalidLoginOrange@247d8ae]" started-at="2022-08-30T20:33:16 IST" name="testInvalidLogin" finished-at="2022-08-30T20:33:21 IST" duration-ms="5177" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[HomePage is displayed]]>
+              <![CDATA[Err Msg is Displayed]]>
             </line>
           </reporter-output>
-        </test-method> <!-- testValidLoginOrange -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:script.ValidLoginOrange@247d8ae]" started-at="2022-08-30T06:35:03 IST" name="closeApp" finished-at="2022-08-30T06:35:03 IST" duration-ms="207" status="PASS">
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:script.InvalidLoginOrange@247d8ae]" started-at="2022-08-30T20:33:21 IST" name="closeApp" finished-at="2022-08-30T20:33:21 IST" duration-ms="294" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Closing the Browser]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeApp -->
-      </class> <!-- script.ValidLoginOrange -->
+      </class> <!-- script.InvalidLoginOrange -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
