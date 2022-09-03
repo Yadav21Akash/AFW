@@ -2,84 +2,42 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[App URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
+      <![CDATA[login]]>
     </line>
     <line>
-      <![CDATA[ITO : 10]]>
+      <![CDATA[testA]]>
     </line>
     <line>
-      <![CDATA[ETO : 12]]>
-    </line>
-    <line>
-      <![CDATA[Opening Chrome Browser]]>
-    </line>
-    <line>
-      <![CDATA[Maximizing browser]]>
-    </line>
-    <line>
-      <![CDATA[Enter the URL & Load the page : https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
-    </line>
-    <line>
-      <![CDATA[Setting ITO to 10 seconds]]>
-    </line>
-    <line>
-      <![CDATA[Setting ETO to 12 seconds]]>
-    </line>
-    <line>
-      <![CDATA[Err Msg is Displayed]]>
-    </line>
-    <line>
-      <![CDATA[Closing the Browser]]>
+      <![CDATA[logout]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-08-30T20:32:54 IST" name="Default suite" finished-at="2022-08-30T20:33:21 IST" duration-ms="27282">
+  <suite started-at="2022-09-03T10:34:40 IST" name="Default suite" finished-at="2022-09-03T10:34:40 IST" duration-ms="77">
     <groups>
     </groups>
-    <test started-at="2022-08-30T20:32:54 IST" name="Default test" finished-at="2022-08-30T20:33:21 IST" duration-ms="27282">
-      <class name="script.InvalidLoginOrange">
-        <test-method is-config="true" signature="openApp()[pri:0, instance:script.InvalidLoginOrange@247d8ae]" started-at="2022-08-30T20:32:54 IST" name="openApp" finished-at="2022-08-30T20:33:16 IST" duration-ms="21751" status="PASS">
+    <test started-at="2022-09-03T10:34:40 IST" name="Default test" finished-at="2022-09-03T10:34:40 IST" duration-ms="77">
+      <class name="Day31.Demo1">
+        <test-method is-config="true" signature="login()[pri:0, instance:Day31.Demo1@5fbdfdcf]" started-at="2022-09-03T10:34:40 IST" name="login" finished-at="2022-09-03T10:34:40 IST" duration-ms="7" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[App URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
-            </line>
-            <line>
-              <![CDATA[ITO : 10]]>
-            </line>
-            <line>
-              <![CDATA[ETO : 12]]>
-            </line>
-            <line>
-              <![CDATA[Opening Chrome Browser]]>
-            </line>
-            <line>
-              <![CDATA[Maximizing browser]]>
-            </line>
-            <line>
-              <![CDATA[Enter the URL & Load the page : https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]]>
-            </line>
-            <line>
-              <![CDATA[Setting ITO to 10 seconds]]>
-            </line>
-            <line>
-              <![CDATA[Setting ETO to 12 seconds]]>
+              <![CDATA[login]]>
             </line>
           </reporter-output>
-        </test-method> <!-- openApp -->
-        <test-method signature="testInvalidLogin()[pri:2, instance:script.InvalidLoginOrange@247d8ae]" started-at="2022-08-30T20:33:16 IST" name="testInvalidLogin" finished-at="2022-08-30T20:33:21 IST" duration-ms="5177" status="PASS">
+        </test-method> <!-- login -->
+        <test-method signature="testA()[pri:0, instance:Day31.Demo1@5fbdfdcf]" started-at="2022-09-03T10:34:40 IST" name="testA" finished-at="2022-09-03T10:34:40 IST" duration-ms="9" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Err Msg is Displayed]]>
+              <![CDATA[testA]]>
             </line>
           </reporter-output>
-        </test-method> <!-- testInvalidLogin -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:script.InvalidLoginOrange@247d8ae]" started-at="2022-08-30T20:33:21 IST" name="closeApp" finished-at="2022-08-30T20:33:21 IST" duration-ms="294" status="PASS">
+        </test-method> <!-- testA -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:Day31.Demo1@5fbdfdcf]" started-at="2022-09-03T10:34:40 IST" name="logout" finished-at="2022-09-03T10:34:40 IST" duration-ms="0" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[Closing the Browser]]>
+              <![CDATA[logout]]>
             </line>
           </reporter-output>
-        </test-method> <!-- closeApp -->
-      </class> <!-- script.InvalidLoginOrange -->
+        </test-method> <!-- logout -->
+      </class> <!-- Day31.Demo1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
