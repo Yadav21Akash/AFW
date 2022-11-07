@@ -41,7 +41,7 @@ public class LoginPage
 	{
 		loginBTN.click();
 	}
-	
+		
 	public boolean verifyErrMsgDisplayed(WebDriverWait wait)
 	{
 		try
