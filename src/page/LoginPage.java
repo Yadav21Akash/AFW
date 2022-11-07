@@ -10,7 +10,6 @@ import org.testng.Reporter;
 
 public class LoginPage
 {
-
 	@FindBy(id="username")
 	private WebElement unTB;
 	
