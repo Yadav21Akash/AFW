@@ -10,7 +10,6 @@ import page.LoginPage;
 
 public class ValidLogin extends BaseTest
 {
-
 		@Test(priority = 1)
 		public void testValidLogin() throws Exception
 		{
@@ -18,7 +17,7 @@ public class ValidLogin extends BaseTest
 			String pwd = Utility.getXLData(testDataPath,"ValidLogin",1,1);
 			
 //	        1. Enter valid user name
-			LoginPage loginPage=new LoginPage(driver);
+			LoginPage loginPage = new LoginPage(driver);
 			loginPage.setUserName(un);
 			
 //			2. enter valid password
@@ -28,7 +27,7 @@ public class ValidLogin extends BaseTest
 			loginPage.clickLoginButton();
 			
 //			4. verify that home page is displayed
-			EnterTimeTrackPage ettPage=new EnterTimeTrackPage(driver);
+			EnterTimeTrackPage ettPage = new EnterTimeTrackPage(driver);
 			boolean res = ettPage.verifyHomePageIsDisplayed(wait);
 			
 			//true->PASS     false->FAIL
