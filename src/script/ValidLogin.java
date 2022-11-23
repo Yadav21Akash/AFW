@@ -30,7 +30,7 @@ public class ValidLogin extends BaseTest
 			EnterTimeTrackPage ettPage = new EnterTimeTrackPage(driver);
 			boolean res = ettPage.verifyHomePageIsDisplayed(wait);
 			
-			//true->PASS     false->FAIL
+//			5. true->PASS     false->FAIL
 			Assert.assertEquals(res, true);
 		}
 }
